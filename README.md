@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MSM Group | Renovations, Painting, Plumbing & Handyman</title>
+  <meta name="description" content="MSM Group provides renovations, painting, plumbing, handyman services, and remodeling in Orlando & Central Florida. Text preferred. Free estimates." />
+  <meta name="format-detection" content="telephone=no" />
+
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#0f1a33;
+      --text:#eef2ff;
+      --muted:#b6c2ff;
+      --line:rgba(255,255,255,.10);
+      --accent:#5eead4;
+      --accent2:#60a5fa;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(96,165,250,.20), transparent 55%),
+                  radial-gradient(1000px 700px at 90% 10%, rgba(94,234,212,.18), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(11,18,32,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      font-weight:800; letter-spacing:.4px;
+    }
+    .logo{
+      width:40px;height:40px;border-radius:12px;
+      background: linear-gradient(135deg, rgba(94,234,212,.95), rgba(96,165,250,.95));
+      box-shadow: 0 10px 30px rgba(96,165,250,.25);
+    }
+    .menu{display:flex; gap:14px; flex-wrap:wrap; font-size:14px; color:var(--muted)}
+    .menu a{padding:8px 10px; border-radius:10px; text-decoration:none}
+    .menu a:hover{background:rgba(255,255,255,.06); color:var(--text)}
+    .ctaBar{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:12px;
+      text-decoration:none; font-weight:700; font-size:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btnPrimary{
+      border:none;
+      background: linear-gradient(135deg, rgba(94,234,212,.95), rgba(96,165,250,.95));
+      color:#061018;
+    }
+
+    .hero{
+      padding:56px 0 28px;
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .h1{font-size:44px; line-height:1.1; margin:0 0 12px; font-weight:900}
+    .sub{color:var(--muted); font-size:18px; margin:0 0 18px}
+    .pillRow{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 22px}
+    .pill{
+      padding:8px 12px;border-radius:999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .card{
+      background: rgba(15,26,51,.65);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.25);
+    }
+    .quick{
+      display:grid; gap:12px;
+      height:100%;
+    }
+    .bigNumber{font-size:22px; font-weight:900}
+    .muted{color:var(--muted)}
+    .divider{height:1px;background:var(--line);margin:10px 0}
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
+      margin: 14px 0 0;
+    }
+    .col6{grid-column: span 6}
+    .col4{grid-column: span 4}
+    .col12{grid-column: span 12}
+
+    h2{margin:0 0 10px; font-size:28px}
+    h3{margin:0 0 8px; font-size:18px}
+    ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+    li{margin:6px 0}
+    section{padding:28px 0}
+    .kpi{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+      margin-top:14px;
+    }
+    .kpi .card{padding:14px}
+    .kpi strong{font-size:16px}
+    footer{
+      padding:24px 0 40px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:14px;
+    }
+    .tiny{font-size:12px; opacity:.9}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns: 1fr; padding-top:34px}
+      .h1{font-size:36px}
+      .col6,.col4{grid-column: span 12}
+      .kpi{grid-template-columns: 1fr}
+      .menu{display:none}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <div class="brand" aria-label="MSM Group">
+          <div class="logo" aria-hidden="true"></div>
+          <div>
+            MSM Group<br>
+            <span class="tiny muted">Renovations • Painting • Plumbing • Handyman • Remodeling</span>
+          </div>
+        </div>
+
+        <nav class="menu" aria-label="Main navigation">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#areas">Service Area</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="ctaBar">
+          <a class="btn" href="tel:+14079613715" aria-label="Call MSM Group">(407) 961-3715</a>
+          <a class="btn btnPrimary" href="sms:+14079613715" aria-label="Text MSM Group">Text for Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div>
+        <h1 class="h1">Reliable Home & Commercial Improvements in Central Florida</h1>
+        <p class="sub">
+          MSM Group delivers quality renovations, painting, plumbing, handyman services, and remodeling — with clear communication and clean workmanship.
+          <strong>Text message preferred.</strong>
+        </p>
+
+        <div class="pillRow" aria-label="Highlights">
+          <span class="pill">Free Estimates</span>
+          <span class="pill">Residential & Commercial</span>
+          <span class="pill">Professional Team</span>
+          <span class="pill">On-Time & Organized</span>
+          <span class="pill">Detail-Oriented Work</span>
+        </div>
+
+        <div class="ctaBar">
+          <a class="btn btnPrimary" href="sms:+14079613715">Text Us Now</a>
+          <a class="btn" href="tel:+14079613715">Call</a>
+          <a class="btn" href="#services">View Services</a>
+        </div>
+
+        <div class="kpi" aria-label="Key points">
+          <div class="card"><strong>One-stop service</strong><div class="muted">From small repairs to full remodels</div></div>
+          <div class="card"><strong>Clean finish</strong><div class="muted">We protect your space and clean up</div></div>
+          <div class="card"><strong>Fast quotes</strong><div class="muted">Text photos/details for quicker estimates</div></div>
+        </div>
+      </div>
+
+      <aside class="card quick" aria-label="Quick contact">
+        <div>
+          <div class="muted">Fastest way to reach us</div>
+          <div class="bigNumber">Text: (407) 961-3715</div>
+          <div class="muted">Send photos + address + what you need.</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div>
+          <h3 style="margin:0 0 6px;">What to include in your text</h3>
+          <ul>
+            <li>Service needed (painting, plumbing, handyman, remodeling)</li>
+            <li>Location (Orlando / nearby city)</li>
+            <li>Timeline (ASAP / this week / flexible)</li>
+            <li>Photos or short video (if possible)</li>
+          </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="ctaBar">
+          <a class="btn btnPrimary" href="sms:+14079613715">Text for a Free Estimate</a>
+          <a class="btn" href="tel:+14079613715">Call</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <p class="muted">High-quality work for homes and businesses — done right, with attention to detail.</p>
+
+      <div class="grid">
+        <div class="card col6">
+          <h3>Renovations</h3>
+          <ul>
+            <li>Kitchen & bathroom upgrades</li>
+            <li>Flooring installation</li>
+            <li>Drywall, repairs & finishing</li>
+            <li>Interior improvements</li>
+          </ul>
+        </div>
+
+        <div class="card col6">
+          <h3>Painting</h3>
+          <ul>
+            <li>Interior & exterior painting</li>
+            <li>Walls, ceilings, doors & trim</li>
+            <li>Premium finishes and clean lines</li>
+            <li>Residential & commercial</li>
+          </ul>
+        </div>
+
+        <div class="card col6">
+          <h3>Plumbing</h3>
+          <ul>
+            <li>Leak repairs</li>
+            <li>Faucet & fixture installation</li>
+            <li>Toilet replacement</li>
+            <li>Basic plumbing repairs</li>
+          </ul>
+        </div>
+
+        <div class="card col6">
+          <h3>Handyman</h3>
+          <ul>
+            <li>Furniture assembly</li>
+            <li>Doors, locks & hardware</li>
+            <li>Mounting TVs, shelves, mirrors</li>
+            <li>Minor electrical work</li>
+          </ul>
+        </div>
+
+        <div class="card col12">
+          <h3>Remodeling</h3>
+          <p class="muted" style="margin:0">
+            Customized remodeling projects designed to transform your space with a functional, modern result — planned and executed from start to finish.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About MSM Group</h2>
+      <div class="card">
+        <p class="muted" style="margin:0">
+          MSM Group is a full-service renovation and handyman company serving Orlando & Central Florida.
+          We focus on clear communication, reliable scheduling, and quality workmanship — whether it’s a small repair or a complete renovation.
+        </p>
+        <div class="divider"></div>
+        <div class="grid">
+          <div class="col4">
+            <h3>Professional</h3>
+            <p class="muted" style="margin:0">We treat your home like our own — clean work and organized job sites.</p>
+          </div>
+          <div class="col4">
+            <h3>Reliable</h3>
+            <p class="muted" style="margin:0">On-time service and honest pricing — no surprises.</p>
+          </div>
+          <div class="col4">
+            <h3>Detail-Oriented</h3>
+            <p class="muted" style="margin:0">Strong finishing, straight lines, and attention to the little things.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AREAS -->
+    <section id="areas">
+      <h2>Service Area</h2>
+      <div class="card">
+        <p class="muted" style="margin:0">
+          We proudly serve <strong>Orlando and surrounding areas in Central Florida</strong>.
+          Not sure if you’re in range? <strong>Text us</strong> your city/ZIP and we’ll confirm.
+        </p>
+        <div class="divider"></div>
+        <div class="ctaBar">
+          <a class="btn btnPrimary" href="sms:+14079613715">Text Your Location</a>
+          <a class="btn" href="tel:+14079613715">Call</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p class="muted" style="margin:0 0 12px">
+          Ready to start your project? We offer <strong>free estimates</strong>. <strong>Text message preferred</strong>.
+        </p>
+        <div class="ctaBar">
+          <a class="btn btnPrimary" href="sms:+14079613715">Text (Preferred)</a>
+          <a class="btn" href="tel:+14079613715">Call: (407) 961-3715</a>
+        </div>
+        <div class="divider"></div>
+        <p class="tiny muted" style="margin:0">
+          Tip: For faster quotes, text photos/video + your address/city + a short description of what you need.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0">
+        © 2026 <strong>MSM Group</strong> — Renovations • Painting • Plumbing • Handyman • Remodeling<br />
+        <span class="tiny">Phone/Text: (407) 961-3715 (Text preferred)</span>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
